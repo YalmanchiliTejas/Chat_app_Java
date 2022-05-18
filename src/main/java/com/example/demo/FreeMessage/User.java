@@ -19,6 +19,7 @@ public class User {
     private long id;
     private String username;
     private String password;
+    @Transient
     private int age;
     private LocalDate dob;
     private String email;
