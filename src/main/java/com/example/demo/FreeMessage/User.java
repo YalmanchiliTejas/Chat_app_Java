@@ -23,6 +23,7 @@ public class User {
     private int age;
     private LocalDate dob;
     private String email;
+    private String major;
 
     public User() {
     }
@@ -54,6 +55,14 @@ public class User {
 
     public String getUsername() {
         return username;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
     }
 
     public void setUsername(String username) {
