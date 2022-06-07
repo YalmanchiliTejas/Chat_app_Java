@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 
 @MessageMapping
 @Controller
+
 public class UserController {
 
 }

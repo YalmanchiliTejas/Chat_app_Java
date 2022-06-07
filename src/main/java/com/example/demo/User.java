@@ -18,7 +18,7 @@ public class User {
     private long id;
     private String name;
     private String major;
-    private String username;
+    private String email;
     private String password;
     private boolean online;
 
@@ -28,7 +28,7 @@ public class User {
     public User(String name, String major, String username, String password) {
         this.name = name;
         this.major = major;
-        this.username = username;
+        this.email = username;
         this.password = password;
     }
 
@@ -36,7 +36,7 @@ public class User {
         this.id = id;
         this.name = name;
         this.major = major;
-        this.username = username;
+        this.email = username;
         this.password = password;
 
     }
@@ -66,11 +66,11 @@ public class User {
     }
 
     public String getUsername() {
-        return username;
+        return email;
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.email = username;
     }
 
     public String getPassword() {
