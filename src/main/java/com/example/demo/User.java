@@ -1,9 +1,12 @@
 package com.example.demo;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "students")
+@CrossOrigin
 public class User {
     @Id
     @SequenceGenerator(
@@ -16,9 +19,13 @@ public class User {
             generator = "id_sequence"
     )
     private long id;
+    @Column
     private String name;
+    @Column
     private String major;
+    @Column
     private String email;
+    @Column
     private String password;
     private boolean online;
 

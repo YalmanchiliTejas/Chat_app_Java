@@ -30,6 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.oauth2Login(oauth2 -> oauth2.userInfoEndpoint(userInfo -> userInfo.oidcUserService(custom)))
                 .authorizeRequests()
                 .anyRequest()
+
         ;
          http.build();
 

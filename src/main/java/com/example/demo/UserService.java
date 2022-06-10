@@ -12,7 +12,12 @@ import java.util.List;
 public class UserService {
 
     private final UserRepository userRepository;
+    private CustomOidcService oidcService;
 
+
+    public void login(User user){
+
+    }
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
@@ -93,6 +98,8 @@ public class UserService {
         User user = userRepository.findByEmail(username).orElseThrow();
         userRepository.delete(user);
     }
+
+
 
 }
 
